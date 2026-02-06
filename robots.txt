@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://xichen.github.io/al-folio/sitemap.xml
+Sitemap: https://seasonxc.github.io/al-folio/sitemap.xml
