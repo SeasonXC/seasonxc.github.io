@@ -25,7 +25,7 @@ social: false
 
 
 ## Contact
-- Email: `zhangxichen18@gmail.com`
+- Email: `zhangxichen17@gmail.com`
 - GitHub: `https://github.com/SeasonXC`
 
 ---
