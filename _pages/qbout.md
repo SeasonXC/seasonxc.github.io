@@ -1,12 +1,12 @@
 ---
-layout: about
-title: about
+layout: About
+title: About
 permalink: /
 nav: true
 nav_order: 1
 
 profile:
-  align: right
+  align: left
   image: profile.jpg         # 把头像放到 assets/img/profile.jpg
   image_circular: false
   more_info: |
