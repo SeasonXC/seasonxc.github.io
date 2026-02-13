@@ -14,9 +14,9 @@ profile:
     <p>Paris, France</p>
     <p>Mathematics × ML</p>
 
-news: false
-selected_papers: true
-social: true
+news: true
+selected_papers: false
+social: false
 ---
 
 
