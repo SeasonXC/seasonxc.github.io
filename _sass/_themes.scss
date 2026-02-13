@@ -6,42 +6,47 @@
 
 :root {
   color-scheme: light;
-  --global-bg-color: #{v.$white-color};
-  --global-code-bg-color: #{v.$code-bg-color-light};
-  --global-text-color: #{v.$black-color};
-  --global-text-color-light: #{v.$grey-color};
-  --global-theme-color: #{v.$purple-color};
-  --global-hover-color: #{v.$purple-color};
-  --global-hover-text-color: #{v.$white-color};
-  --global-footer-bg-color: #{v.$grey-color-dark};
-  --global-footer-text-color: #{v.$grey-color-light};
-  --global-footer-link-color: #{v.$white-color};
-  --global-distill-app-color: #{v.$grey-color};
-  --global-divider-color: rgba(0, 0, 0, 0.1);
-  --global-card-bg-color: #{v.$white-color};
-  --global-highlight-color: #{v.$red-color-dark};
-  --global-back-to-top-bg-color: rgba(
-    #{color.channel(v.$black-color, "red", v.$space: rgb)},
-    #{color.channel(v.$black-color, "green", v.$space: rgb)},
-    #{color.channel(v.$black-color, "blue", v.$space: rgb)},
-    0.4
-  );
-  --global-back-to-top-text-color: #{v.$white-color};
-  --global-newsletter-bg-color: #{v.$white-color};
-  --global-newsletter-text-color: #{v.$black-color};
 
-  --global-tip-block: #42b983;
-  --global-tip-block-bg: #e2f5ec;
-  --global-tip-block-text: #215d42;
-  --global-tip-block-title: #359469;
-  --global-warning-block: #e7c000;
-  --global-warning-block-bg: #fff8d8;
-  --global-warning-block-text: #6b5900;
-  --global-warning-block-title: #b29400;
-  --global-danger-block: #c00;
-  --global-danger-block-bg: #ffe0e0;
-  --global-danger-block-text: #600;
-  --global-danger-block-title: #c00;
+  /* Holmes × Math (Light / Parchment) */
+  --global-bg-color: #F4EFE2;              /* parchment */
+  --global-card-bg-color: #FBF7EE;         /* paper */
+  --global-text-color: #1B1A17;            /* ink */
+  --global-text-color-light: #5A554A;      /* warm gray */
+  --global-theme-color: #C8A24A;           /* brass */
+  --global-hover-color: #2E8B73;           /* chalk green */
+  --global-hover-text-color: #FBF7EE;      /* paper */
+  --global-highlight-color: #6B1F2B;       /* oxblood */
+
+  --global-code-bg-color: rgba(200, 162, 74, 0.10); /* brass tint */
+
+  --global-footer-bg-color: #1B1A17;       /* ink */
+  --global-footer-text-color: #E7E1D6;     /* warm light */
+  --global-footer-link-color: #C8A24A;     /* brass */
+
+  --global-distill-app-color: #5A554A;
+  --global-divider-color: rgba(27, 26, 23, 0.12);
+
+  --global-back-to-top-bg-color: rgba(27, 26, 23, 0.40);
+  --global-back-to-top-text-color: #FBF7EE;
+
+  --global-newsletter-bg-color: #FBF7EE;
+  --global-newsletter-text-color: #1B1A17;
+
+  /* Callout blocks (match detective palette) */
+  --global-tip-block: #2E8B73;
+  --global-tip-block-bg: rgba(46, 139, 115, 0.12);
+  --global-tip-block-text: #1B1A17;
+  --global-tip-block-title: #2E8B73;
+
+  --global-warning-block: #C8A24A;
+  --global-warning-block-bg: rgba(200, 162, 74, 0.14);
+  --global-warning-block-text: #1B1A17;
+  --global-warning-block-title: #C8A24A;
+
+  --global-danger-block: #6B1F2B;
+  --global-danger-block-bg: rgba(107, 31, 43, 0.12);
+  --global-danger-block-text: #1B1A17;
+  --global-danger-block-title: #6B1F2B;
 
   #light-toggle-system {
     display: inline-block;
@@ -76,41 +81,48 @@
 
 html[data-theme="dark"] {
   color-scheme: dark;
-  --global-bg-color: #{v.$grey-color-dark};
-  --global-code-bg-color: #{v.$code-bg-color-dark};
-  --global-text-color: #{v.$grey-color-light};
-  --global-text-color-light: #{v.$grey-color};
-  --global-theme-color: #{v.$cyan-color};
-  --global-hover-color: #{v.$cyan-color};
-  --global-hover-text-color: #{v.$white-color};
-  --global-footer-bg-color: #{v.$grey-color-light};
-  --global-footer-text-color: #{v.$grey-color-dark};
-  --global-footer-link-color: #{v.$black-color};
-  --global-distill-app-color: #{v.$grey-color-light};
-  --global-divider-color: #424246;
-  --global-card-bg-color: #{v.$grey-900};
-  --global-back-to-top-bg-color: rgba(
-    #{color.channel(v.$white-color, "red", v.$space: rgb)},
-    #{color.channel(v.$white-color, "green", v.$space: rgb)},
-    #{color.channel(v.$white-color, "blue", v.$space: rgb)},
-    0.5
-  );
-  --global-back-to-top-text-color: #{v.$black-color};
-  --global-newsletter-bg-color: #{v.$grey-color-light};
-  --global-newsletter-text-color: #{v.$grey-color-dark};
 
-  --global-tip-block: #42b983;
-  --global-tip-block-bg: #215d42;
-  --global-tip-block-text: #beffe2;
-  --global-tip-block-title: #e2f5ec;
-  --global-warning-block: #e7c000;
-  --global-warning-block-bg: #6b5900;
-  --global-warning-block-text: #fff2af;
-  --global-warning-block-title: #fff8d8;
-  --global-danger-block: #c00;
-  --global-danger-block-bg: #600;
-  --global-danger-block-text: #ffb9b9;
-  --global-danger-block-title: #ffe0e0;
+  /* Holmes × Math (Dark / London Night) */
+  --global-bg-color: #0F1215;            /* night */
+  --global-card-bg-color: #171C21;       /* night card */
+  --global-text-color: #E7E1D6;          /* warm light */
+  --global-text-color-light: #B9BCC0;    /* fog */
+
+  --global-theme-color: #C8A24A;         /* brass */
+  --global-hover-color: #2E8B73;         /* chalk */
+  --global-hover-text-color: #0F1215;
+
+  --global-highlight-color: #C8A24A;
+  --global-code-bg-color: #141A1F;
+  --global-divider-color: #30363D;
+
+  --global-footer-bg-color: #0F1215;
+  --global-footer-text-color: #B9BCC0;
+  --global-footer-link-color: #C8A24A;
+
+  --global-distill-app-color: #B9BCC0;
+
+  --global-back-to-top-bg-color: rgba(231, 225, 214, 0.18);
+  --global-back-to-top-text-color: #E7E1D6;
+
+  --global-newsletter-bg-color: #171C21;
+  --global-newsletter-text-color: #E7E1D6;
+
+  /* Callout blocks (dark-friendly) */
+  --global-tip-block: #2E8B73;
+  --global-tip-block-bg: rgba(46, 139, 115, 0.22);
+  --global-tip-block-text: #E7E1D6;
+  --global-tip-block-title: #9FE3D2;
+
+  --global-warning-block: #C8A24A;
+  --global-warning-block-bg: rgba(200, 162, 74, 0.22);
+  --global-warning-block-text: #E7E1D6;
+  --global-warning-block-title: #F3E3B5;
+
+  --global-danger-block: #6B1F2B;
+  --global-danger-block-bg: rgba(107, 31, 43, 0.25);
+  --global-danger-block-text: #E7E1D6;
+  --global-danger-block-title: #F2B6C0;
 
   .only-light {
     display: none;
