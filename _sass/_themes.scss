@@ -8,45 +8,45 @@
   color-scheme: light;
 
   /* Holmes × Math (Light / Parchment) */
-  --global-bg-color: #F4EFE2;              /* parchment */
-  --global-card-bg-color: #FBF7EE;         /* paper */
-  --global-text-color: #1B1A17;            /* ink */
-  --global-text-color-light: #5A554A;      /* warm gray */
-  --global-theme-color: #C8A24A;           /* brass */
-  --global-hover-color: #2E8B73;           /* chalk green */
-  --global-hover-text-color: #FBF7EE;      /* paper */
-  --global-highlight-color: #6B1F2B;       /* oxblood */
+  --global-bg-color: #f4efe2; /* parchment */
+  --global-card-bg-color: #fbf7ee; /* paper */
+  --global-text-color: #1b1a17; /* ink */
+  --global-text-color-light: #5a554a; /* warm gray */
+  --global-theme-color: #c8a24a; /* brass */
+  --global-hover-color: #2e8b73; /* chalk green */
+  --global-hover-text-color: #fbf7ee; /* paper */
+  --global-highlight-color: #6b1f2b; /* oxblood */
 
-  --global-code-bg-color: rgba(200, 162, 74, 0.10); /* brass tint */
+  --global-code-bg-color: rgba(200, 162, 74, 0.1); /* brass tint */
 
-  --global-footer-bg-color: #1B1A17;       /* ink */
-  --global-footer-text-color: #E7E1D6;     /* warm light */
-  --global-footer-link-color: #C8A24A;     /* brass */
+  --global-footer-bg-color: #1b1a17; /* ink */
+  --global-footer-text-color: #e7e1d6; /* warm light */
+  --global-footer-link-color: #c8a24a; /* brass */
 
-  --global-distill-app-color: #5A554A;
+  --global-distill-app-color: #5a554a;
   --global-divider-color: rgba(27, 26, 23, 0.12);
 
-  --global-back-to-top-bg-color: rgba(27, 26, 23, 0.40);
-  --global-back-to-top-text-color: #FBF7EE;
+  --global-back-to-top-bg-color: rgba(27, 26, 23, 0.4);
+  --global-back-to-top-text-color: #fbf7ee;
 
-  --global-newsletter-bg-color: #FBF7EE;
-  --global-newsletter-text-color: #1B1A17;
+  --global-newsletter-bg-color: #fbf7ee;
+  --global-newsletter-text-color: #1b1a17;
 
   /* Callout blocks (match detective palette) */
-  --global-tip-block: #2E8B73;
+  --global-tip-block: #2e8b73;
   --global-tip-block-bg: rgba(46, 139, 115, 0.12);
-  --global-tip-block-text: #1B1A17;
-  --global-tip-block-title: #2E8B73;
+  --global-tip-block-text: #1b1a17;
+  --global-tip-block-title: #2e8b73;
 
-  --global-warning-block: #C8A24A;
+  --global-warning-block: #c8a24a;
   --global-warning-block-bg: rgba(200, 162, 74, 0.14);
-  --global-warning-block-text: #1B1A17;
-  --global-warning-block-title: #C8A24A;
+  --global-warning-block-text: #1b1a17;
+  --global-warning-block-title: #c8a24a;
 
-  --global-danger-block: #6B1F2B;
+  --global-danger-block: #6b1f2b;
   --global-danger-block-bg: rgba(107, 31, 43, 0.12);
-  --global-danger-block-text: #1B1A17;
-  --global-danger-block-title: #6B1F2B;
+  --global-danger-block-text: #1b1a17;
+  --global-danger-block-title: #6b1f2b;
 
   #light-toggle-system {
     display: inline-block;
@@ -83,46 +83,46 @@ html[data-theme="dark"] {
   color-scheme: dark;
 
   /* Holmes × Math (Dark / London Night) */
-  --global-bg-color: #0F1215;            /* night */
-  --global-card-bg-color: #171C21;       /* night card */
-  --global-text-color: #E7E1D6;          /* warm light */
-  --global-text-color-light: #B9BCC0;    /* fog */
+  --global-bg-color: #0f1215; /* night */
+  --global-card-bg-color: #171c21; /* night card */
+  --global-text-color: #e7e1d6; /* warm light */
+  --global-text-color-light: #b9bcc0; /* fog */
 
-  --global-theme-color: #C8A24A;         /* brass */
-  --global-hover-color: #2E8B73;         /* chalk */
-  --global-hover-text-color: #0F1215;
+  --global-theme-color: #c8a24a; /* brass */
+  --global-hover-color: #2e8b73; /* chalk */
+  --global-hover-text-color: #0f1215;
 
-  --global-highlight-color: #C8A24A;
-  --global-code-bg-color: #141A1F;
-  --global-divider-color: #30363D;
+  --global-highlight-color: #c8a24a;
+  --global-code-bg-color: #141a1f;
+  --global-divider-color: #30363d;
 
-  --global-footer-bg-color: #0F1215;
-  --global-footer-text-color: #B9BCC0;
-  --global-footer-link-color: #C8A24A;
+  --global-footer-bg-color: #0f1215;
+  --global-footer-text-color: #b9bcc0;
+  --global-footer-link-color: #c8a24a;
 
-  --global-distill-app-color: #B9BCC0;
+  --global-distill-app-color: #b9bcc0;
 
   --global-back-to-top-bg-color: rgba(231, 225, 214, 0.18);
-  --global-back-to-top-text-color: #E7E1D6;
+  --global-back-to-top-text-color: #e7e1d6;
 
-  --global-newsletter-bg-color: #171C21;
-  --global-newsletter-text-color: #E7E1D6;
+  --global-newsletter-bg-color: #171c21;
+  --global-newsletter-text-color: #e7e1d6;
 
   /* Callout blocks (dark-friendly) */
-  --global-tip-block: #2E8B73;
+  --global-tip-block: #2e8b73;
   --global-tip-block-bg: rgba(46, 139, 115, 0.22);
-  --global-tip-block-text: #E7E1D6;
-  --global-tip-block-title: #9FE3D2;
+  --global-tip-block-text: #e7e1d6;
+  --global-tip-block-title: #9fe3d2;
 
-  --global-warning-block: #C8A24A;
+  --global-warning-block: #c8a24a;
   --global-warning-block-bg: rgba(200, 162, 74, 0.22);
-  --global-warning-block-text: #E7E1D6;
-  --global-warning-block-title: #F3E3B5;
+  --global-warning-block-text: #e7e1d6;
+  --global-warning-block-title: #f3e3b5;
 
-  --global-danger-block: #6B1F2B;
+  --global-danger-block: #6b1f2b;
   --global-danger-block-bg: rgba(107, 31, 43, 0.25);
-  --global-danger-block-text: #E7E1D6;
-  --global-danger-block-title: #F2B6C0;
+  --global-danger-block-text: #e7e1d6;
+  --global-danger-block-title: #f2b6c0;
 
   .only-light {
     display: none;
