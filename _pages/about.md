@@ -2,29 +2,48 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+nav: true
+nav_order: 1
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  image: assets/img/profile.jpg   # 把你的头像放到这个路径（或改成你自己的路径）
+  image_circular: false
+  address: >
+    <p><strong>SeasonXC</strong></p>
+    <p>Paris, France</p>
+    <p><em>Mathematics × ML</em></p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+news: false
+selected_papers: true
+social: true
+---
 
-announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+# Case File: Mathematical Investigations
 
-latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+> **Motto.** *The game is afoot — in equations.*  
+> I treat research like detective work: observe patterns, isolate causes, and prove the conclusion.
+
+## Current Cases
+- **Feature learning in the polynomial regime** (beyond the linear regime / random features).
+- **Search algorithms for Boolean network ensembles** (mutation-set discovery & control of mis-pruning).
+- **Optimal transport & statistics** (sample complexity, CLT, and practical tradeoffs).
+
+## Methods & Tools
+- **Theory:** probability, optimization, random matrices, learning theory.
+- **Practice:** PyTorch, JAX (optional), Python tooling, reproducible experiments.
+- **Writing:** LaTeX, TikZ, clean figures & ablations.
+
+## Evidence Log (What I’m building)
+- A clean experimental pipeline with readable configs, seeds, and plots.
+- Notes that connect **intuition → lemma → theorem → experiment**.
+- A public record of “failed leads” (negative results) when useful.
+
+## Contact
+- Email: `zhangxichen17@gmail.com`
+- GitHub: `https://github.com/SeasonXC`
+- (Optional) Google Scholar / Semantic Scholar / Twitter / LinkedIn
+
 ---
 
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
