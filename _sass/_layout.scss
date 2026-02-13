@@ -48,6 +48,25 @@ a:hover {
   text-decoration-color: rgba(46, 139, 115, 0.75); /* chalk underline hint */
 }
 
+/* Holmes: small embellishments */
+h1, h2, h3 {
+  letter-spacing: 0.2px;
+}
+
+blockquote {
+  position: relative;
+}
+
+blockquote::before {
+  content: "CASE NOTE";
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  opacity: 0.7;
+  margin-bottom: 0.35rem;
+  color: var(--global-theme-color);
+}
+
 // Content layout uses Bootstrap's grid system with responsive columns
 // Main content flows naturally through container-mt-5 and Bootstrap grid classes
 // See _layouts/default.liquid and _includes/projects.liquid for examples
