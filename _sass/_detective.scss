@@ -1,0 +1,129 @@
+/*******************************************************************************
+ * Detective overlay
+ ******************************************************************************/
+
+:root {
+  --detective-serif: Georgia, "Times New Roman", serif;
+  --detective-sans: Inter, "Helvetica Neue", Arial, sans-serif;
+  --detective-mono: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+}
+
+body {
+  font-family: var(--detective-sans);
+  letter-spacing: 0.01em;
+  background-image: radial-gradient(circle at top, rgba(200, 162, 74, 0.05), transparent 36%);
+}
+
+h1,
+h2,
+h3,
+.navbar-brand,
+.navbar-nav .nav-link,
+.post-title,
+.card-title {
+  font-family: var(--detective-serif);
+  letter-spacing: 0.02em;
+}
+
+h1 {
+  font-size: clamp(2.4rem, 4vw, 3.4rem);
+  margin-bottom: 0.4rem;
+}
+
+h2 {
+  margin-top: 2.3rem;
+  padding-top: 0.4rem;
+  border-top: 1px solid var(--global-divider-color);
+}
+
+.navbar .navbar-nav .nav-link {
+  text-transform: uppercase;
+  font-size: 0.84rem;
+  letter-spacing: 0.08em;
+}
+
+.post-description,
+.post-meta,
+.cv .item .meta,
+.cv .item .location,
+small,
+.meta {
+  color: var(--global-text-color-light);
+}
+
+code,
+pre,
+.post .post-meta,
+.date,
+.year {
+  font-family: var(--detective-mono);
+}
+
+blockquote {
+  border-left-width: 3px;
+  border-radius: 0 6px 6px 0;
+}
+
+blockquote::before {
+  content: "FIELD NOTE";
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  opacity: 0.75;
+  margin-bottom: 0.35rem;
+  color: var(--global-theme-color);
+}
+
+.card,
+.post,
+.project-card,
+.card-item {
+  border: 1px solid var(--global-divider-color);
+  box-shadow: none;
+}
+
+.detective-quotes {
+  margin-bottom: 1.35rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--global-divider-color);
+}
+
+.detective-quotes .quote-line {
+  margin: 0.28rem 0;
+  font-family: var(--detective-serif);
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: var(--global-footer-text-color);
+}
+
+.detective-quotes span {
+  font-family: var(--detective-sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light);
+}
+
+.footer-copy {
+  font-size: 0.82rem;
+  color: var(--global-footer-text-color);
+}
+
+.post-list .post-item,
+.publications ol.bibliography li {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px dashed var(--global-divider-color);
+}
+
+.profile img {
+  border: 1px solid var(--global-divider-color);
+}
+
+.page-subtitle,
+.subtitle {
+  color: var(--global-text-color-light);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.88rem;
+}
