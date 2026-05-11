@@ -2,12 +2,13 @@
 
 import os
 import sys
-import yaml
 from datetime import datetime
+
+import yaml
 from scholarly import scholarly
 
 
-def load_scholar_user_id() -> str:
+def load_scholar_user_id() -> str | None:
     """Load the Google Scholar user ID from the configuration file."""
     config_file = "_data/socials.yml"
     if not os.path.exists(config_file):
@@ -17,13 +18,13 @@ def load_scholar_user_id() -> str:
         sys.exit(1)
     try:
         with open(config_file, "r") as f:
-            config = yaml.safe_load(f)
+            config = yaml.safe_load(f) or {}
         scholar_user_id = config.get("scholar_userid")
         if not scholar_user_id:
             print(
-                "No 'scholar_userid' found in the configuration file. Please add 'scholar_userid' to _data/socials.yml."
+                "No 'scholar_userid' found in _data/socials.yml. Skipping citation update."
             )
-            sys.exit(1)
+            return None
         return scholar_user_id
     except yaml.YAMLError as e:
         print(
@@ -32,7 +33,7 @@ def load_scholar_user_id() -> str:
         sys.exit(1)
 
 
-SCHOLAR_USER_ID: str = load_scholar_user_id()
+SCHOLAR_USER_ID: str | None = load_scholar_user_id()
 OUTPUT_FILE: str = "_data/citations.yml"
 
 
@@ -40,6 +41,7 @@ def get_scholar_citations() -> None:
     """Fetch and update Google Scholar citation data."""
     print(f"Fetching citations for Google Scholar ID: {SCHOLAR_USER_ID}")
     today = datetime.now().strftime("%Y-%m-%d")
+    existing_data = {}
 
     # Check if the output file was already updated today
     if os.path.exists(OUTPUT_FILE):
@@ -125,6 +127,9 @@ def get_scholar_citations() -> None:
 
 
 if __name__ == "__main__":
+    if SCHOLAR_USER_ID is None:
+        sys.exit(0)
+
     try:
         get_scholar_citations()
     except Exception as e:

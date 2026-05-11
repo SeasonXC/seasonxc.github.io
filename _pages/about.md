@@ -7,13 +7,16 @@ nav_order: 1
 subtitle: Case File 001 · Mathematics × Machine Learning
 profile:
   align: right
-  image: profile.jpg
+  image: profile.png
   image_circular: false
   more_info: >
     SeasonXC<br>
     Paris, France<br>
     Mathematics × ML
-news: true
+announcements:
+  enabled: false
+latest_posts:
+  enabled: false
 selected_papers: false
 social: false
 ---

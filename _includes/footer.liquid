@@ -6,32 +6,36 @@
 {% endcapture %}
 
 {% if site.footer_fixed %}
-<footer class="fixed-bottom" role="contentinfo">
-  <div class="container">
-    {{ footer_contents }}
-  </div>
-</footer>
-{% else %}
-<footer class="sticky-bottom mt-5" role="contentinfo">
-  <div class="container">
-    {% if site.footer_quote_primary or site.footer_quote_secondary %}
-      <div class="detective-quotes">
-        {% if site.footer_quote_primary %}
-          <p class="quote-line">“{{ site.footer_quote_primary }}” <span>— {{ site.footer_quote_primary_source }}</span></p>
-        {% endif %}
-        {% if site.footer_quote_secondary %}
-          <p class="quote-line">“{{ site.footer_quote_secondary }}” <span>— {{ site.footer_quote_secondary_source }}</span></p>
-        {% endif %}
-      </div>
-    {% endif %}
-
-    {% if site.newsletter.enabled %}
-      {% include newsletter.liquid %}
-    {% endif %}
-
-    <div class="footer-copy">
+  <footer class="fixed-bottom" role="contentinfo">
+    <div class="container">
       {{ footer_contents }}
     </div>
-  </div>
-</footer>
+  </footer>
+{% else %}
+  <footer class="sticky-bottom mt-5" role="contentinfo">
+    <div class="container">
+      {% if site.footer_quote_primary or site.footer_quote_secondary %}
+        <div class="detective-quotes">
+          {% if site.footer_quote_primary %}
+            <p class="quote-line">
+              “{{ site.footer_quote_primary }}” <span>— {{ site.footer_quote_primary_source }}</span>
+            </p>
+          {% endif %}
+          {% if site.footer_quote_secondary %}
+            <p class="quote-line">
+              “{{ site.footer_quote_secondary }}” <span>— {{ site.footer_quote_secondary_source }}</span>
+            </p>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {% if site.newsletter.enabled %}
+        {% include newsletter.liquid %}
+      {% endif %}
+
+      <div class="footer-copy">
+        {{ footer_contents }}
+      </div>
+    </div>
+  </footer>
 {% endif %}

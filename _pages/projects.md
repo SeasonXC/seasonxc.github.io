@@ -13,11 +13,11 @@ horizontal: false
 {% assign sorted_projects = site.projects | sort: "importance" %}
 
 {% if page.horizontal %}
-  {% for project in sorted_projects %}
-    {% include projects_horizontal.liquid %}
-  {% endfor %}
+{% for project in sorted_projects %}
+{% include projects_horizontal.liquid %}
+{% endfor %}
 {% else %}
-  {% for project in sorted_projects %}
-    {% include projects.liquid %}
-  {% endfor %}
+{% for project in sorted_projects %}
+{% include projects.liquid %}
+{% endfor %}
 {% endif %}

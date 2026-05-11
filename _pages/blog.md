@@ -17,22 +17,23 @@ trail:
 ---
 
 # Field Notes
+
 ## short reports, fragments, and working thoughts
 
 > A notebook, not a newsroom.
 
 {% if page.pagination.enabled %}
-  {% assign postlist = paginator.posts %}
+{% assign postlist = paginator.posts %}
 {% else %}
-  {% assign postlist = site.posts %}
+{% assign postlist = site.posts %}
 {% endif %}
 
 {% for post in postlist %}
-  {% if post.external_source == blank %}
-    {% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %}
-  {% else %}
-    {% assign read_time = post.feed_content | strip_html | number_of_words | divided_by: 180 | plus: 1 %}
-  {% endif %}
+{% if post.external_source == blank %}
+{% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %}
+{% else %}
+{% assign read_time = post.feed_content | strip_html | number_of_words | divided_by: 180 | plus: 1 %}
+{% endif %}
 
   <div class="post-item">
     <h3>
@@ -47,9 +48,10 @@ trail:
 
     <p>{{ post.description }}</p>
     <p class="post-meta">{{ read_time }} min read · {{ post.date | date: '%B %d, %Y' }}</p>
+
   </div>
 {% endfor %}
 
 {% if page.pagination.enabled %}
-  {% include pagination.liquid %}
+{% include pagination.liquid %}
 {% endif %}
