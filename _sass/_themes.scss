@@ -7,46 +7,44 @@
 :root {
   color-scheme: light;
 
-  /* Holmes × Math (Light / Parchment) */
-  --global-bg-color: #f4efe2; /* parchment */
-  --global-card-bg-color: #fbf7ee; /* paper */
-  --global-text-color: #1b1a17; /* ink */
-  --global-text-color-light: #5a554a; /* warm gray */
-  --global-theme-color: #c8a24a; /* brass */
-  --global-hover-color: #2e8b73; /* chalk green */
-  --global-hover-text-color: #fbf7ee; /* paper */
-  --global-highlight-color: #6b1f2b; /* oxblood */
+  --global-bg-color: #ffffff;
+  --global-card-bg-color: #ffffff;
+  --global-text-color: #111111;
+  --global-text-color-light: #555555;
+  --global-theme-color: #0645ad;
+  --global-hover-color: #0645ad;
+  --global-hover-text-color: #ffffff;
+  --global-highlight-color: #111111;
 
-  --global-code-bg-color: rgba(200, 162, 74, 0.1); /* brass tint */
+  --global-code-bg-color: #f6f6f6;
 
-  --global-footer-bg-color: #1b1a17; /* ink */
-  --global-footer-text-color: #e7e1d6; /* warm light */
-  --global-footer-link-color: #c8a24a; /* brass */
+  --global-footer-bg-color: #ffffff;
+  --global-footer-text-color: #555555;
+  --global-footer-link-color: #0645ad;
 
-  --global-distill-app-color: #5a554a;
-  --global-divider-color: rgba(27, 26, 23, 0.12);
+  --global-distill-app-color: #555555;
+  --global-divider-color: #cccccc;
 
-  --global-back-to-top-bg-color: rgba(27, 26, 23, 0.4);
-  --global-back-to-top-text-color: #fbf7ee;
+  --global-back-to-top-bg-color: rgba(0, 0, 0, 0.25);
+  --global-back-to-top-text-color: #ffffff;
 
-  --global-newsletter-bg-color: #fbf7ee;
-  --global-newsletter-text-color: #1b1a17;
+  --global-newsletter-bg-color: #ffffff;
+  --global-newsletter-text-color: #111111;
 
-  /* Callout blocks (match detective palette) */
-  --global-tip-block: #2e8b73;
-  --global-tip-block-bg: rgba(46, 139, 115, 0.12);
-  --global-tip-block-text: #1b1a17;
-  --global-tip-block-title: #2e8b73;
+  --global-tip-block: #0645ad;
+  --global-tip-block-bg: #f6f6f6;
+  --global-tip-block-text: #111111;
+  --global-tip-block-title: #0645ad;
 
-  --global-warning-block: #c8a24a;
-  --global-warning-block-bg: rgba(200, 162, 74, 0.14);
-  --global-warning-block-text: #1b1a17;
-  --global-warning-block-title: #c8a24a;
+  --global-warning-block: #777777;
+  --global-warning-block-bg: #f6f6f6;
+  --global-warning-block-text: #111111;
+  --global-warning-block-title: #555555;
 
-  --global-danger-block: #6b1f2b;
-  --global-danger-block-bg: rgba(107, 31, 43, 0.12);
-  --global-danger-block-text: #1b1a17;
-  --global-danger-block-title: #6b1f2b;
+  --global-danger-block: #a00000;
+  --global-danger-block-bg: #f6f6f6;
+  --global-danger-block-text: #111111;
+  --global-danger-block-title: #a00000;
 
   #light-toggle-system {
     display: inline-block;

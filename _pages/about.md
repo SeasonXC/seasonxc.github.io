@@ -1,46 +1,16 @@
 ---
-layout: about
-title: about
+layout: simple
+title: Xichen Zhang | Page personnelle
 permalink: /
-nav: true
-nav_order: 1
-subtitle: Case File 001 · Mathematics × Machine Learning
-profile:
-  align: right
-  image: profile.png
-  image_circular: false
-  more_info: >
-    SeasonXC<br>
-    Paris, France<br>
-    Mathematics × ML
-announcements:
-  enabled: false
-latest_posts:
-  enabled: false
-selected_papers: false
-social: false
+nav: false
 ---
 
-I work at the edge of **mathematics, machine learning, and careful inquiry**.
-This site is arranged as an archive: research as case files, projects as open
-investigations, and notes as field reports.
+<h3 style="color: #006400;">Xichen ZHANG</h3>
 
-> “It is a capital mistake to theorise before one has data.”
-> — Sherlock Holmes
+zhangxichen17 [abracadabra] gmail.com
 
-## Current investigations
+---
 
-I am interested in problems where **formal structure and empirical behavior**
-meet: proofs and heuristics, abstraction and experiment, elegance and evidence.
+Écrits :
 
-## What lives here
-
-- **Research** holds papers, preprints, and formal records.
-- **Cases** collects projects, prototypes, and side investigations.
-- **Notes** is where shorter thoughts, fragments, and working ideas live.
-
-## Contact
-
-Email: `zhangxichen17@gmail.com`
-
-GitHub: `https://github.com/SeasonXC`
+- Une note courte, 2026 ([pdf]({{ '/Ecrits/Une-note-courte.pdf' | relative_url }})).

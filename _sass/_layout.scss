@@ -41,32 +41,75 @@ body.sticky-bottom-footer {
 }
 
 a {
-  text-decoration-color: rgba(200, 162, 74, 0.55); /* brass underline hint */
+  text-decoration-color: rgba(6, 69, 173, 0.35);
 }
 
 a:hover {
-  text-decoration-color: rgba(46, 139, 115, 0.75); /* chalk underline hint */
+  text-decoration-color: rgba(6, 69, 173, 0.75);
 }
 
-/* Holmes: small embellishments */
-h1,
-h2,
-h3 {
-  letter-spacing: 0.2px;
+.simple-site {
+  padding: 8px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  line-height: normal;
+  color: #000000;
+  background: #ffffff;
+  background-image: none;
 }
 
-blockquote {
-  position: relative;
-}
+.simple-page {
+  max-width: none;
+  margin: 0;
+  padding: 0;
 
-blockquote::before {
-  content: "CASE NOTE";
-  display: block;
-  font-size: 0.72rem;
-  letter-spacing: 0.12em;
-  opacity: 0.7;
-  margin-bottom: 0.35rem;
-  color: var(--global-theme-color);
+  h1 {
+    font-family: inherit;
+    letter-spacing: normal;
+    text-transform: none;
+  }
+
+  h3 {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    font-family: inherit;
+    font-size: 1.17em;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: normal;
+    text-transform: none;
+  }
+
+  p {
+    margin: 1em 0;
+  }
+
+  ul,
+  ol {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-left: 40px;
+  }
+
+  li {
+    margin: 0;
+    display: list-item;
+  }
+
+  hr {
+    border-style: inset;
+    border-width: 1px;
+  }
+
+  a {
+    color: #0000ee;
+    text-decoration: underline;
+  }
+
+  a:visited {
+    color: #551a8b;
+  }
 }
 
 // Content layout uses Bootstrap's grid system with responsive columns

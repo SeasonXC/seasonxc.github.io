@@ -3,7 +3,7 @@ layout: page
 title: cases
 permalink: /projects/
 description: open investigations, prototypes, and side experiments
-nav: true
+nav: false
 nav_order: 3
 horizontal: false
 ---

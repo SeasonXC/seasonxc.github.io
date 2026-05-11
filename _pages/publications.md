@@ -3,7 +3,7 @@ layout: page
 permalink: /publications/
 title: research
 description: papers, preprints, and formal case records
-nav: true
+nav: false
 nav_order: 2
 ---
 
