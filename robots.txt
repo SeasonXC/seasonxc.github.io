@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://seasonxc.github.io/sitemap.xml
+Sitemap: https://xiczhang.github.io/sitemap.xml
